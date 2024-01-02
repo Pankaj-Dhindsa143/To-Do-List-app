@@ -184,11 +184,11 @@ overflow: hidden;
     body {
     background-color: #317773;
     width: 100%;
-    height: 100%;
+    height: 80vh;
 }
     .contaner{
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         border-radius: 0;
     }
    
@@ -227,7 +227,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 50px;
-        top: -35%;
+        top: -50%;
     }
 
     .input {
@@ -276,7 +276,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 40px;
-        top: -33%;
+        top: -50%;
     }
 
     .input {
@@ -329,7 +329,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 30px;
-        top: -35%;
+        top: -50%;
     }
 
     .input {
@@ -376,7 +376,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 22px;
-        top: -25%;
+        top: -50%;
        
     }
 
@@ -421,7 +421,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 30px;
-        top: -28%;
+        top: -50%;
     }
 
     .input {
