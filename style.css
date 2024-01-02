@@ -125,7 +125,7 @@ overflow: hidden;
     border-radius: 20%;
     padding: 10px;
     right: 5%;
-    top: -33%;
+    top: -40%;
     background-color:green;
     transition: 1s ease-in-out;
     color: #fff;
@@ -222,7 +222,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 50px;
-        top: -23%;
+        top: -35%;
     }
 
     .input {
@@ -271,7 +271,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 40px;
-        top: -23%;
+        top: -33%;
     }
 
     .input {
@@ -324,7 +324,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 30px;
-        top: -30%;
+        top: -35%;
     }
 
     .input {
@@ -371,7 +371,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 22px;
-        top: -20%;
+        top: -25%;
        
     }
 
@@ -416,7 +416,7 @@ overflow: hidden;
 
     .inputContainer i{
         font-size: 30px;
-        top: -22%;
+        top: -28%;
     }
 
     .input {
