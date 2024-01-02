@@ -104,9 +104,6 @@ overflow: hidden;
 
 }
 
-
-
-
 .inputContainer{
     position: absolute;
     width: 100%;
@@ -167,9 +164,6 @@ overflow: hidden;
     float: right;
 }
 
-
-
-
 .ShowInput{
     transition: .5s ease-in-out;
     transform: translateY(0%);
@@ -188,7 +182,7 @@ overflow: hidden;
 } */
     .contaner{
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         border-radius: 0;
     }
    
