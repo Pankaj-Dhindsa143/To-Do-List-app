@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #317773;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contaner {
+    width: 500px;
+    background-color:#fff;
+    border-radius: 10px;
+    height: 80%;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   border-bottom: 2px solid orangered;
+
+}
+header img{
+    width:60px;
+   
+}
+header h2{
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+.task{
+    height: 90%;
+   overflow: scroll;
+}
+.task::-webkit-scrollbar{
+    display: none;
+}
+
+.task li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+.task li .li-1st-box{
+    display: flex;
+    gap: 10px;
+overflow: hidden;
+}
+.task li .li-1st-box input{
+   height: 25px;
+   width: 25px;
+}
+
+.task li .li-1st-box p{
+    font-size: 22px;
+}
+
+.task li .li-1st-box .checked{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.task li div i{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.task li div i:hover{
+    background-color: rgb(138, 137, 137);
+    opacity: .5;
+}
+
+
+.task li div  button{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.task li div button:nth-child(1){
+   color: green;
+    font-size: 20px;
+}
+.task li div button:nth-child(2){
+    font-size: 20px;
+    color: red;
+
+}
+
+
+
+
+.inputContainer{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    background-color:#FFA351;
+    border-radius:52% 47% 0% 0% / 19% 19% 0% 2% ;
+    padding: 10px;
+    transition: .5s ease-in-out;
+    transform: translateY(100%);
+}
+ .inputContainer i{
+    position:fixed;
+    font-size: 30px;
+    border-radius: 20%;
+    padding: 10px;
+    right: 5%;
+    top: -33%;
+    background-color:green;
+    transition: 1s ease-in-out;
+    color: #fff;
+}
+.inputContainer h2{
+    font-size: 40px;
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+}
+
+.inputbox {
+    width: 96%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+   bottom: 40%;
+   background-color:#fff;
+}
+
+.input {
+    font-size: 18px;
+    background-color: transparent;
+   width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.addbtn {
+    font-size: 18px;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    float: right;
+}
+
+
+
+
+.ShowInput{
+    transition: .5s ease-in-out;
+    transform: translateY(0%);
+}
+.ShowInput i{
+    background-color: red;
+    transition: .3s ease-in-out;
+    top: -20%;
+}
+
+@media (max-width:1024px){
+    .contaner{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+   
+    header img{
+        width:100px;
+    }
+    header h2{
+        font-size: 40px;
+    }
+    
+    .task li .li-1st-box{
+        width:85%;
+    }
+    .task li .li-1st-box input{
+        height: 35px;
+        width: 35px;
+        margin-top: 8px;
+     }
+     .task li .li-1st-box p{
+        font-size: 40px;
+    }
+   
+    .inputContainer{
+        height: 350px;
+    }
+    .inputContainer h2{
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    .task li div i{
+        font-size: 44px;
+        padding: 8px;
+        border-radius: 50%;
+        
+    }
+
+    .inputContainer i{
+        font-size: 50px;
+        top: -23%;
+    }
+
+    .input {
+        font-size: 40px;
+        width: 78%;
+    }
+    .addbtn{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    header img{
+        width:70px;
+    }
+    header h2{
+        font-size: 30px;
+    }
+    
+    .task li .li-1st-box{
+        width:82%;
+    }
+    .task li .li-1st-box input{
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+     }
+     .task li .li-1st-box p{
+        font-size: 35px;
+    }
+
+    .task li div i{
+        font-size: 34px;
+        padding: 8px;
+        border-radius: 50%;
+        
+    }
+
+    .inputContainer{
+        height: 250px;
+    }
+    .inputContainer h2{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .inputContainer i{
+        font-size: 40px;
+        top: -23%;
+    }
+
+    .input {
+        font-size: 30px;
+        width: 73.6%;
+    }
+    .addbtn{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width:450px){
+    .contaner{
+        padding: 0;
+    }
+    header img{
+        width:50px;
+    }
+    header h2{
+        font-size: 23px;
+    }
+    
+    .task li .li-1st-box{
+        width:78%;
+    }
+    .task li .li-1st-box input{
+        height: 25px;
+        width: 25px;
+        margin-top: 5px;
+     }
+     .task li .li-1st-box p{
+        font-size: 26px;
+    }
+
+    .task li div i{
+        font-size: 25px;
+        padding: 8px;
+        border-radius: 50%;
+        
+    }
+
+    .inputContainer{
+        height: 200px;
+    }
+    .inputContainer h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .inputContainer i{
+        font-size: 30px;
+        top: -30%;
+    }
+
+    .input {
+        font-size: 23px;
+        width: 70%;
+    }
+    .addbtn{
+        font-size: 23px;
+    }
+}
+
+@media (max-width:375px){
+    header img{
+        width:50px;
+        margin: 10px 0 10px 10px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+    
+    .task li .li-1st-box{
+        width:75%;
+    }
+    .task li .li-1st-box input{
+        height: 23px;
+        width: 23px;
+        margin-top: 4px;
+     }
+     .task li .li-1st-box p{
+        font-size: 22px;
+    }
+
+    .task li div i{
+        font-size: 22px;
+    }
+
+    .inputContainer{
+        height: 200px;
+    }
+    .inputContainer h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .inputContainer i{
+        font-size: 22px;
+        top: -20%;
+       
+    }
+
+    .input {
+        font-size: 18px;
+        width: 75%;
+    }
+    .addbtn{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:320px){
+    header h2{
+        font-size: 20px;
+    }
+    
+    .task li .li-1st-box{
+        width:73.6%;
+    }
+    .task li .li-1st-box input{
+        height: 20px;
+        width: 20px;
+       
+     }
+     .task li .li-1st-box p{
+        font-size: 20px;
+    }
+
+    .task li div i{
+        font-size: 20px;
+    }
+
+    .inputContainer{
+        height: 200px;
+    }
+    .inputContainer h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .inputContainer i{
+        font-size: 30px;
+        top: -22%;
+    }
+
+    .input {
+        font-size: 19px;
+     width: 64.9%;
+    }
+    .addbtn{
+        font-size: 19px;
+    }
+   
+}
