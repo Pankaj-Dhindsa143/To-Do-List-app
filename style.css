@@ -181,7 +181,12 @@ overflow: hidden;
 }
 
 @media (max-width:1024px){
-    .contaner{
+    
+    .contaner{body {
+    background-color: #317773;
+    width: 100%;
+    height: 100%;
+}
         width: 100%;
         height: 100vh;
         border-radius: 0;
